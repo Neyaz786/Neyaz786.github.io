@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.bf538fe7.css",
-    "main.js": "/static/js/main.5090dd3f.js",
+    "main.js": "/static/js/main.f966e416.js",
     "static/media/Screenshot 2025-11-09 145645.png": "/static/media/Screenshot 2025-11-09 145645.837325e49ce210387eb7.png",
     "static/media/myphoto.jpg": "/static/media/myphoto.a2f262a71f14959ef13a.jpg",
     "static/media/patna_muslim.jpeg": "/static/media/patna_muslim.f1c5d7719cb2381ba003.jpeg",
     "index.html": "/index.html",
     "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
-    "main.5090dd3f.js.map": "/static/js/main.5090dd3f.js.map"
+    "main.f966e416.js.map": "/static/js/main.f966e416.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.5090dd3f.js"
+    "static/js/main.f966e416.js"
   ]
 }
