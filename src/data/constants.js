@@ -157,8 +157,8 @@ export const education = [
     img: nitLogo,
     school: "National Institute of Technology Jamshedpur",
     date: "2022 - Present",
-    grade: "7.29 CPI",
-    desc: "I am currently pursuing a Bachelor's degree in Mechanical Engineering at National Institute of Technology Jamshedpur. I am a 4th year undergraduate student with a CPI of 7.29.",
+    grade: "7.29 CGPA",
+    desc: "I am currently pursuing a Bachelor's degree in Mechanical Engineering at National Institute of Technology Jamshedpur. I am a 4th year undergraduate student with a CGPA of 7.29.",
     degree: "B.Tech, Mechanical Engineering",
   },
   {
@@ -199,8 +199,8 @@ export const projects = [
       "Jupyter",
     ],
     category: "machine learning",
-    github: "https://github.com/Neyaz786",
-    webapp: "",
+    github: "https://github.com/Neyaz786/NextGen-Delivery-Prediction",
+    webapp: "https://neyaz786-nextgen-delivery-prediction-app-qdpb0g.streamlit.app/",
   },
   {
     id: 1,
@@ -218,7 +218,7 @@ export const projects = [
       "Data Analysis",
     ],
     category: "machine learning",
-    github: "https://github.com/Neyaz786",
+    github: "https://github.com/Neyaz786/VoltEdge-data-analysis",
     webapp: "",
   },
   {
@@ -237,7 +237,7 @@ export const projects = [
       "Machine Learning",
     ],
     category: "machine learning",
-    github: "https://github.com/Neyaz786",
+    github: "https://github.com/Neyaz786/Online-Payment-Fraud-Detection",
     webapp: "",
   },
   {
@@ -256,7 +256,7 @@ export const projects = [
       "Data Engineering",
     ],
     category: "machine learning",
-    github: "https://github.com/Neyaz786",
+    github: "https://github.com/Neyaz786/Cloud-Based-ETL-for-Dream11-Fantasy-Sports-Predictions",
     webapp: "",
   },
   {
@@ -275,8 +275,8 @@ export const projects = [
       "WebSocket",
     ],
     category: "web app",
-    github: "https://github.com/Neyaz786",
-    webapp: "",
+    github: "https://github.com/Neyaz786/CHAT-APP",
+    webapp: "https://chat-app-4es7.onrender.com/",
   },
   {
     id: 5,
@@ -293,15 +293,7 @@ export const projects = [
       "Mobile Development",
     ],
     category: "android app",
-    github: "https://github.com/Neyaz786",
+    github: "https://github.com/Neyaz786/wallet-api",
     webapp: "",
   },
-];
-
-export const TimeLineData = [
-  { year: 2021, text: "Started my journey" },
-  { year: 2022, text: "Worked as a freelance developer" },
-  { year: 2021, text: "Founded JavaScript Mastery" },
-  { year: 2022, text: "Shared my projects with the world" },
-  { year: 2023, text: "Started my own platform" },
 ];
