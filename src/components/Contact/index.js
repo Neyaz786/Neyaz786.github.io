@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+
 import { Snackbar, Alert } from '@mui/material';
 import { Bio } from '../../data/constants';
 
@@ -142,10 +142,7 @@ const Contact = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const form = useRef();
 
-  // Initialize EmailJS
-  React.useEffect(() => {
-    emailjs.init('SybVGsYS52j2TfLbi');
-  }, []);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -174,24 +171,19 @@ const Contact = () => {
     }
     
     setIsLoading(true);
+
+    const whatsappNumber = "917079327635";
+    const textMessage = `Name: ${fromName}\nEmail: ${fromEmail}\nSubject: ${subject}\nMessage: ${message}`;
+    const encodedMessage = encodeURIComponent(textMessage);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    window.open(whatsappUrl, '_blank');
     
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
-        setAlertMessage('Email sent successfully!');
-        setAlertSeverity('success');
-        setOpen(true);
-        form.current.reset();
-        setIsLoading(false);
-      }, (error) => {
-        console.error('EmailJS Error:', error);
-        // Fallback to mailto link
-        const mailtoLink = `mailto:${Bio.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${fromName} (${fromEmail})\n\n${message}`)}`;
-        window.location.href = mailtoLink;
-        setAlertMessage('Opening your email client. If it doesn\'t open, please email me directly at ' + Bio.email);
-        setAlertSeverity('info');
-        setOpen(true);
-        setIsLoading(false);
-      });
+    setAlertMessage('Redirecting to WhatsApp...');
+    setAlertSeverity('success');
+    setOpen(true);
+    form.current.reset();
+    setIsLoading(false);
   }
 
 
