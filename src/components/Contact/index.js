@@ -197,7 +197,7 @@ const Contact = () => {
           Email: <a href={`mailto:${Bio.email}`} style={{ color: '#854CE6', textDecoration: 'none' }}>{Bio.email}</a>
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
+          <ContactTitle>WhatsApp Me </ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />

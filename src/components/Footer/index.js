@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { Bio } from '../../data/constants';
 
 const FooterContainer = styled.div`
@@ -58,6 +59,13 @@ color: ${({ theme }) => theme.text_primary};
   }
 `;
 
+const FooterText = styled.p`
+  font-size: 0.9rem;
+  color: ${({ theme }) => theme.text_primary};
+  text-align: center;
+  margin-top: 1.5rem;
+`;
+
 const SocialMediaIcons = styled.div`
   display: flex;
   margin-top: 1rem;
@@ -92,8 +100,10 @@ function Footer() {
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
         </Nav>
+        <FooterText>Click on icons to view my <b style={{ color: '#C13584' }}>Instagram</b> and <b style={{ color: '#0077b5' }}>linkedIn</b> profile</FooterText>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon style={{ color: "#E1306C" }} /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon style={{ color: "#0077b5" }} /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
           &copy; 2025 Neyaz Ahmed. All rights reserved.

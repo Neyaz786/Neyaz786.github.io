@@ -5,7 +5,6 @@ import holyCrossLogo from '../images/holy_cross.png';
 export const Bio = {
   name: "Neyaz Ahmed",
   roles: [
-    "4th Year Undergraduate",
     "software developer",
   ],
   description:
@@ -16,7 +15,7 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/neyaz-ahmed-81106927b",
   email: "neyazahmed2026@gmail.com",
   twitter: " ",
-  insta: " ",
+  insta: "https://www.instagram.com/neyaz_ahmed_03?igsh=MTNtdDhxbTBwNm9iNQ==",
   facebook: " ",
 };
 
@@ -39,6 +38,10 @@ export const skills = [
       {
         name: "JavaScript",
         image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "Java",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       },
     ],
   },
@@ -158,7 +161,7 @@ export const education = [
     school: "National Institute of Technology Jamshedpur",
     date: "2022 - Present",
     grade: "7.29 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Mechanical Engineering at National Institute of Technology Jamshedpur. I am a 4th year undergraduate student with a CGPA of 7.29.",
+    desc: "I am currently pursuing a Bachelor's degree in Mechanical Engineering at National Institute of Technology Jamshedpur with a CGPA of 7.29.",
     degree: "B.Tech, Mechanical Engineering",
   },
   {
